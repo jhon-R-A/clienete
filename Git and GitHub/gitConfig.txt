@@ -1,0 +1,96 @@
+--para configurar bases de git
+
+git config --global user.name 'nombre'
+
+git config --global user.email 'email'
+
+//para iniciar git en un proyecto
+git init
+
+/cambiar nombre de rama
+git branch -m 'nombre'
+
+//ver estado 
+git status
+
+//agregar ficheros
+git add 'fichero'
+
+//para agregar todo los ficheros
+git add .
+
+//guardar una version
+git commit -m 'mensaje'
+
+//ver las versiones guardadas
+git log
+
+presionar q si no deja usar cconsola
+
+//vorver a na version en especifico o anterio
+git checkout 'fichero'
+
+//volver a la ultima
+git reset
+
+//ver historila rama
+git log --graph
+
+//ver en una linea
+git log --graph --pretty=oneline
+
+//ver sin decoradores
+git log --graph --decorate --all --oneline
+
+//configurara alias
+git config --global alias.tree "combinacion de comandos"
+
+//archivvo .gitignore
+para ignorar ficheros **/.'fichero'
+
+//para ver cambios sin tener que guardar
+git diff
+
+podemos ver diferencias entre ramas 
+git diff 'nombre de la rama'
+
+// para moverme entre ramas
+git checkout 'id de la rama'
+y con git --
+git head //agregamos la cabeza en la rama que estamos
+
+//para resetiar a un punto atras o adelante
+git reset --hard 'id'
+
+//para ver el historial completo
+git reflog
+
+//agregar un deescripcio a un commit
+git tag 'descripcion'
+
+git tag //para vver listas de tag
+
+//para crear na nueva rama
+git branch 'nombree rama'
+
+//para moverme entre ramas 
+git switch 'nombre de rama'
+
+//mover datos de una rama a otra
+git merge 'nombre de la rama a traer datos'
+.se deven solucionar problemas de conflicto si se a modificado una lidea de codigo igual
+
+//para guardar o almacer un cambio que no queres comitiar de momento y movernos a otra rama.
+git stash
+
+//para ver la lsita de stash
+git stash list
+
+//para obtener el stash 
+git stash pop
+
+//para eliminar el stash
+git stash drop
+
+//para borrar una rama 
+git branch -d 'nombre de rama'

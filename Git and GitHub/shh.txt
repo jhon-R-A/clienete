@@ -1,0 +1,11 @@
+//para listar key en el dirctorio .ssh
+ls -al ~/.ssh
+
+//para crear una key ssh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+//para agregar clave ssh a ssh-agent
+eval `ssh-agent -s`
+
+//para agrgar la clave
+ssh-add ~/.ssh/id_ed25519
