@@ -1,0 +1,21 @@
+/# por medio de ssh
+
+//para conectar 
+git remote add origin 'direcion'
+
+//para pushear un repositorio a a github
+git push -u origin main
+
+
+/#comados para camabios
+//para subir
+git push
+
+//para traer el historial de cambios sin traer los cambios
+git fetch
+
+//se descarga el historial y los cambios
+git pull origin main
+
+//para clonar un repositorio
+git clone 'link'
